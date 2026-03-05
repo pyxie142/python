@@ -1,0 +1,5 @@
+a = input(("digite uma letra minuscula "))
+b = input(("digite um numero "))
+print (a.isalpha())
+print (a.islower())
+print (b.isnumeric())
