@@ -7,4 +7,4 @@
 # // divisão inteira
 # % 'resto' da divisão
 # == é igual 
-print (5==5)
+# ordem de precedencia, expressao dentro do parenteses, potenciação, multipliacação e divisão, soma e subtração
