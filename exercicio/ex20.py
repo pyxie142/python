@@ -1,0 +1,10 @@
+import math
+angulo = float(input('Digite o ângulo que você deseja: '))
+radiano = math.radians(angulo)
+seno = math.sin(radiano)
+cosseno = math.cos(radiano)
+tangente = math.tan(radiano)
+print('O ângulo de {}° tem:'.format(angulo))
+print('SENO: {}'.format(seno))
+print('COSSENO: {}'.format(cosseno))
+print('TANGENTE: {}'.format(tangente))
