@@ -1,4 +1,4 @@
-frase = ('curso de análise e desenvolvimento de sistemas')
+frase = ('Curso De Análise e desenvolvimento de sistemas')
 print(frase[3]) #isso mostra o espaço da memória
 print(frase[3:46]) #intervalo de caracteres menos o último
 print(frase[3:45:2]) #pula de dois em dois
@@ -11,3 +11,7 @@ print(frase.count('a',6,7)) #procura caractere especifico dentro de um intervalo
 print(frase.find('sis')) #mostra a partir de qual indice aparece a pesquisa 
 print(frase.find('android')) #o resultado -1 indica que nn tem essa sequencia na variavel
 print('amo' in frase) #o in verifica se aquele conjunto de string esta na variavel
+print(frase.replace('curso','amo'))
+print(frase)
+print(frase.upper())
+print(frase.lower())
