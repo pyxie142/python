@@ -1,0 +1,16 @@
+valor = []
+continuar = 's'
+
+while continuar == 's':
+    num = int(input('Digite um valor: '))
+    
+    if num in valor:
+        print('Valor duplicado! Não vou adicionar...')
+    else:
+        valor.append(num)
+        print('Valor adicionado com sucesso...')
+        
+    continuar = str(input('Quer continuar? [S/N] ')).lower().strip()[0]
+
+valor.sort()
+print(f'Você digitou os valores {valor}')
