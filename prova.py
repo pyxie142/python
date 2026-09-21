@@ -1,7 +1,25 @@
-from random import choice
-alunol = str(input('Primeiro aluno:'))
-aluno2 = str(input('Segundo aluno:'))
-aluno3 = str(input('Terceiro aluno:'))
-lista = [alunol, aluno2, aluno3]
-escolhido = choice (lista) #escolhe um da lista
-print('o aluno escolhido foi {}'.format(escolhido))
+testes = [
+    "[a + b] * [c - d]",
+    "[[a + b]",
+    "[a + b]]",
+    "a + b",
+    "]["
+]
+for expressao in testes:
+    pilha = []
+    valida = True
+    for caractere in expressao:
+        if caractere == '[':
+            pilha.append(caractere)
+        elif caractere == ']':
+            if len(pilha) == 0:
+                valida = False
+            else:
+                pilha.pop()
+    if len(pilha) != 0:
+        valida = False
+    if valida == True:
+        resultado = "Correta"
+    else:
+        resultado = "Incorreta"
+    print("Expressão:", expressao, "->", resultado)
