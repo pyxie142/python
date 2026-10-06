@@ -20,3 +20,8 @@ Estado={}
 Brasil=[]
 for c in range(0,3):
         Estado['uf']=str(input('unidade federativa'))
+        Estado['sigla']=str(input('sigla do estado'))
+        Brasil.append(Estado.copy())
+for e in Brasil:
+        for k,v in e.items():
+                print(f'o campo{k} tem o valor {v}')
