@@ -5,3 +5,4 @@ if aluno['media']>=6.0:
     aluno['situação']='aprovado'
 else:
     aluno['situação']='reprovado'
+print(aluno)
